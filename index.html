@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://www.genspark.ai/api/files/s/lJEJ1RfL -->
+<html lang="en" data-theme="light"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darren Liu, DrPH | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Darren Liu, DrPH _ Portfolio_files/css2" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./Darren Liu, DrPH _ Portfolio_files/all.min.css">
+
+    <style>
+      :root {
+        --navy: #0d1b2a;
+        --teal: #1a7a7a;
+        --gold: #c9a84c;
+        --white: #ffffff;
+        --light-bg: #f8f9fa;
+        --text-dark: #1f2937;
+        --text-light: #6b7280;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        color: var(--text-dark);
+        line-height: 1.6;
+        overflow-x: hidden;
+        background-color: var(--light-bg);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: 'Playfair Display', serif;
+      }
+
+      /* Navigation */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 1.2rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(10px);
+      }
+
+      .logo {
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--navy);
+        border: 2px solid var(--gold);
+        padding: 5px 10px;
+        letter-spacing: 2px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: var(--navy);
+        font-weight: 500;
+        font-size: 0.9rem;
+        transition: color 0.3s;
+        position: relative;
+      }
+
+      .nav-links a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--gold);
+        transition: width 0.3s;
+      }
+
+      .nav-links a:hover::after {
+        width: 100%;
+      }
+
+      /* Hero Section */
+      .hero {
+        height: 100vh;
+        background-color: var(--navy);
+        background-image:
+          radial-gradient(circle at 20% 50%, rgba(26, 122, 122, 0.15) 0%, transparent 50%),
+          radial-gradient(circle at 80% 20%, rgba(201, 168, 76, 0.08) 0%, transparent 50%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: var(--white);
+        padding: 0 1rem;
+        position: relative;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      }
+
+      .hero-content {
+        z-index: 1;
+        max-width: 900px;
+      }
+
+      .hero h1 {
+        font-size: 4.5rem;
+        margin-bottom: 1rem;
+        animation: fadeUp 1s ease-out;
+      }
+
+      .hero-subtitle {
+        font-size: 1.25rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.9);
+        animation: fadeUp 1s ease-out 0.2s backwards;
+      }
+
+      .hero-institution {
+        color: var(--gold);
+        font-weight: 600;
+        margin-bottom: 3rem;
+        font-size: 1.1rem;
+        animation: fadeUp 1s ease-out 0.4s backwards;
+      }
+
+      .hero-links {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+        animation: fadeUp 1s ease-out 0.6s backwards;
+      }
+
+      .hero-icon {
+        color: var(--white);
+        font-size: 1.5rem;
+        transition:
+          transform 0.3s,
+          color 0.3s;
+      }
+
+      .hero-icon:hover {
+        color: var(--gold);
+        transform: translateY(-3px);
+      }
+
+      .cta-btn {
+        display: inline-block;
+        padding: 1rem 2.5rem;
+        background: transparent;
+        border: 2px solid var(--gold);
+        color: var(--gold);
+        text-decoration: none;
+        font-weight: 600;
+        letter-spacing: 1px;
+        transition: all 0.3s;
+        animation: fadeUp 1s ease-out 0.8s backwards;
+      }
+
+      .cta-btn:hover {
+        background: var(--gold);
+        color: var(--navy);
+      }
+
+      /* Sections General */
+      section {
+        padding: 6rem 10%;
+        position: relative;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--navy);
+        margin-bottom: 4rem;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+
+      .section-title::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background-color: var(--gold);
+      }
+
+      /* About Section */
+      .about-container {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      .quote-card {
+        background: var(--navy);
+        color: var(--white);
+        padding: 3rem;
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 20px 20px 0 var(--teal);
+      }
+
+      .quote-card i {
+        font-size: 2rem;
+        color: var(--gold);
+        margin-bottom: 1rem;
+      }
+
+      .quote-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+        font-style: italic;
+      }
+
+      .about-text p {
+        font-size: 1.1rem;
+        color: var(--text-dark);
+        margin-bottom: 1.5rem;
+        line-height: 1.8;
+      }
+
+      /* Core Competencies */
+      .competencies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .comp-card {
+        background: var(--white);
+        padding: 2.5rem;
+        border-top: 4px solid var(--teal);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s;
+      }
+
+      .comp-card:hover {
+        transform: translateY(-10px);
+      }
+
+      .comp-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .comp-card h3 {
+        color: var(--navy);
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+
+      .comp-card p {
+        color: var(--text-light);
+        font-size: 0.95rem;
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 2px;
+        background-color: var(--teal);
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+      }
+
+      .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        background-color: inherit;
+        width: 50%;
+      }
+
+      .timeline-item::after {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: -10px;
+        background-color: var(--white);
+        border: 4px solid var(--gold);
+        top: 25px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+
+      .left {
+        left: 0;
+      }
+
+      .right {
+        left: 50%;
+      }
+
+      .right::after {
+        left: -10px;
+      }
+
+      .timeline-content {
+        padding: 1.5rem;
+        background-color: var(--white);
+        position: relative;
+        border-radius: 4px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        border-left: 4px solid var(--navy);
+      }
+
+      .timeline-date {
+        color: var(--teal);
+        font-weight: 700;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+        display: block;
+      }
+
+      /* Publications - Showcase Layout */
+      .books-showcase {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+      }
+
+      .book-showcase-card {
+        display: grid;
+        grid-template-columns: 220px 1fr;
+        gap: 3rem;
+        align-items: start;
+        background: var(--white);
+        padding: 2.5rem;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+        border-radius: 4px;
+        transition: box-shadow 0.3s;
+      }
+
+      .book-showcase-card:hover {
+        box-shadow: 0 16px 50px rgba(0, 0, 0, 0.13);
+      }
+
+      .book-showcase-alt {
+        grid-template-columns: 1fr 220px;
+      }
+
+      .book-cover-link {
+        display: block;
+        text-decoration: none;
+      }
+
+      .book-cover-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 3px;
+        box-shadow: 8px 8px 0 var(--gold);
+        transition: box-shadow 0.3s, transform 0.3s;
+      }
+
+      .book-cover-wrapper:hover {
+        box-shadow: 4px 4px 0 var(--teal);
+        transform: translate(2px, 2px);
+      }
+
+      .book-cover-img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
+
+      .book-cover-overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(13, 27, 42, 0.75);
+        color: var(--gold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+
+      .book-cover-wrapper:hover .book-cover-overlay {
+        opacity: 1;
+      }
+
+      .book-year-tag {
+        display: inline-block;
+        background: var(--navy);
+        color: var(--gold);
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.9rem;
+        margin-bottom: 1rem;
+        letter-spacing: 1px;
+      }
+
+      .book-showcase-details h3 {
+        font-size: 1.5rem;
+        color: var(--navy);
+        margin-bottom: 0.75rem;
+        line-height: 1.3;
+      }
+
+      .book-publisher,
+      .book-isbn {
+        font-size: 0.88rem;
+        color: var(--teal);
+        font-weight: 500;
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .book-intro {
+        font-size: 0.97rem;
+        color: var(--text-dark);
+        line-height: 1.8;
+        margin: 1.25rem 0 1.75rem;
+        border-left: 3px solid var(--gold);
+        padding-left: 1rem;
+      }
+
+      .book-buy-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.65rem 1.5rem;
+        background: var(--navy);
+        color: var(--gold);
+        text-decoration: none;
+        font-size: 0.88rem;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        transition: background 0.3s, color 0.3s;
+        border-radius: 2px;
+      }
+
+      .book-buy-btn:hover {
+        background: var(--gold);
+        color: var(--navy);
+      }
+
+      @media (max-width: 768px) {
+        .book-showcase-card,
+        .book-showcase-alt {
+          grid-template-columns: 1fr;
+        }
+        .book-showcase-alt .book-cover-link {
+          order: -1;
+        }
+        .book-cover-wrapper {
+          max-width: 180px;
+          margin: 0 auto;
+        }
+      }
+
+      /* Research Themes */
+      .themes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+      }
+
+      .theme-card {
+        background: var(--white);
+        padding: 2.5rem;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      }
+
+      .theme-accent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 6px;
+      }
+
+      .theme-teal {
+        background: var(--teal);
+      }
+      .theme-gold {
+        background: var(--gold);
+      }
+      .theme-navy {
+        background: var(--navy);
+      }
+
+      .theme-card h3 {
+        margin: 1rem 0;
+        color: var(--navy);
+      }
+
+      /* Honors */
+      .honors-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        gap: 2rem;
+      }
+
+      .honor-card {
+        background: var(--white);
+        padding: 2rem;
+        border-left: 4px solid var(--gold);
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .year-badge {
+        background: var(--navy);
+        color: var(--gold);
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+        font-family: 'Playfair Display', serif;
+        min-width: 80px;
+        text-align: center;
+      }
+
+      /* Service */
+      .service-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        background: var(--white);
+        padding: 4rem;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+      }
+
+      .service-column h3 {
+        color: var(--teal);
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1rem;
+      }
+
+      .service-item {
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .service-item i {
+        color: var(--gold);
+        font-size: 0.8rem;
+      }
+
+      /* Contact */
+      .contact {
+        background: var(--navy);
+        color: var(--white);
+        text-align: center;
+        padding: 8rem 10%;
+      }
+
+      .contact h2 {
+        color: var(--white);
+        margin-bottom: 1rem;
+      }
+
+      .contact-grid {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+      }
+
+      .contact-card {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 2rem;
+        min-width: 250px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s;
+      }
+
+      .contact-card:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateY(-5px);
+      }
+
+      .contact-card i {
+        font-size: 2rem;
+        color: var(--gold);
+        margin-bottom: 1rem;
+      }
+
+      .contact-card a {
+        color: var(--white);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      /* Footer */
+      footer {
+        background: #08111a;
+        color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.85rem;
+      }
+
+      /* Animations */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .reveal {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: all 0.8s ease-out;
+      }
+
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 3rem;
+        }
+        .about-container {
+          grid-template-columns: 1fr;
+        }
+        .timeline::after {
+          left: 31px;
+        }
+        .timeline-item {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+        }
+        .timeline-item::after {
+          left: 21px;
+        }
+        .left::after,
+        .right::after {
+          left: 21px;
+        }
+        .right {
+          left: 0%;
+        }
+        .service-list {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          padding: 2rem;
+        }
+        .nav-links {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="logo">DL</div>
+      <div class="nav-links">
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#about">About</a>
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#competencies">Expertise</a>
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#journey">Experience</a>
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#research">Research</a>
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Darren Liu, DrPH</h1>
+        <p class="hero-subtitle">Professor of Public Health | Health Equity Advocate | Scholar &amp; Leader</p>
+        <p class="hero-institution">WVU School of Public Health</p>
+
+        <div class="hero-links">
+          <a href="mailto:darren.liu@outlook.com" class="hero-icon"><i class="fas fa-envelope"></i></a>
+          <a href="https://www.linkedin.com/in/hokila/" target="_blank" class="hero-icon"><i class="fab fa-linkedin"></i></a>
+          <a href="tel:+14123301212" class="hero-icon"><i class="fas fa-phone"></i></a>
+        </div>
+
+        <a href="https://www.genspark.ai/api/files/s/lJEJ1RfL#about" class="cta-btn">Explore My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="section-title">About Me</div>
+      <div class="about-container reveal active">
+        <div class="quote-card">
+          <i class="fas fa-quote-left"></i>
+          <p class="quote-text">
+            "My mission is to bridge the gap between policy and practice, ensuring that long-term care systems are not
+            just efficient, but equitable and profoundly human."
+          </p>
+        </div>
+        <div class="about-text">
+          <p>
+            Dr. Darren Liu is a tenured Professor at West Virginia University's School of Public Health, where he leads
+            research and education at the intersection of long-term care, health equity, and public health systems.
+          </p>
+          <p>
+            With over two decades of academic experience spanning four universities, Dr. Liu brings a global
+            perspective—shaped by his roots in Taiwan and his research across the United States, East Asia, and
+            beyond—to every classroom, publication, and policy conversation.
+          </p>
+          <p>
+            His work is driven by a commitment to person-centered care, reducing health disparities, and preparing the
+            next generation of public health leaders through innovative, competency-based education.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="competencies" style="background: white">
+      <div class="section-title">Core Competencies</div>
+      <div class="competencies-grid reveal active">
+        <!-- Card 1 -->
+        <div class="comp-card">
+          <div class="comp-icon">🏛️</div>
+          <h3>Academic &amp; Strategic Leadership</h3>
+          <p>
+            Driving public health education excellence across CEPH/CAHME-accredited programs with a focus on long-term
+            care and rural workforce development.
+          </p>
+        </div>
+        <!-- Card 2 -->
+        <div class="comp-card">
+          <div class="comp-icon">⚖️</div>
+          <h3>Health Equity &amp; Advocacy</h3>
+          <p>
+            Championing person-centered care and reducing disparities through research, teaching, and national policy
+            engagement.
+          </p>
+        </div>
+        <!-- Card 3 -->
+        <div class="comp-card">
+          <div class="comp-icon">📚</div>
+          <h3>Curriculum Innovation</h3>
+          <p>
+            Designing competency-based, experiential curricula that prepare future health care administrators and public
+            health professionals.
+          </p>
+        </div>
+        <!-- Card 4 -->
+        <div class="comp-card">
+          <div class="comp-icon">🔬</div>
+          <h3>Research &amp; Scholarship</h3>
+          <p>
+            Publishing peer-reviewed research on aging, health IT, long-term care policy, and health disparities across
+            38+ journal articles and 3 books.
+          </p>
+        </div>
+        <!-- Card 5 -->
+        <div class="comp-card">
+          <div class="comp-icon">🌏</div>
+          <h3>Global Perspective</h3>
+          <p>
+            Engaging in international scholarship and cross-cultural research across the U.S., Taiwan, Japan, and South
+            Korea.
+          </p>
+        </div>
+        <!-- Card 6 -->
+        <div class="comp-card">
+          <div class="comp-icon">🤝</div>
+          <h3>Mentorship &amp; Service</h3>
+          <p>
+            Mentoring students in research, co-authoring with junior faculty, and leading national committees in ASPPH
+            and AUPHA.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Academic Journey -->
+    <section id="journey">
+      <div class="section-title">Academic Journey</div>
+      <div class="timeline reveal active">
+        <!-- Item 1 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="timeline-date">2022 – Present</span>
+            <h3>Professor (with tenure)</h3>
+            <p>WVU School of Public Health, Morgantown, WV</p>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="timeline-date">2017 – 2022</span>
+            <h3>Associate Professor (with tenure)</h3>
+            <p>Des Moines University, Des Moines, IA</p>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="timeline-date">2011 – 2016</span>
+            <h3>Assistant Professor (tenure track)</h3>
+            <p>University of Nevada, Las Vegas, NV</p>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="timeline-date">2010 – 2011</span>
+            <h3>Assistant Professor (visiting)</h3>
+            <p>University of Central Florida, Orlando, FL</p>
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div class="timeline-item left">
+          <div class="timeline-content">
+            <span class="timeline-date">2009 – 2010</span>
+            <h3>Assistant Professor (research)</h3>
+            <p>Washington State University, Spokane, WA</p>
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div class="timeline-item right">
+          <div class="timeline-content">
+            <span class="timeline-date">2002 – 2009</span>
+            <h3>DrPH, Behavioral &amp; Community Health</h3>
+            <p>University of Pittsburgh, Pennsylvania</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Works -->
+    <section id="works" style="background: white">
+      <div class="section-title">Books &amp; Publications</div>
+      <div class="books-showcase reveal active">
+
+        <!-- Book 1 -->
+        <div class="book-showcase-card">
+          <a href="https://www.amazon.com/dp/0826149340/" target="_blank" class="book-cover-link">
+            <div class="book-cover-wrapper">
+              <img src="./Darren Liu, DrPH _ Portfolio_files/RbLd1Tie" alt="Managing Quality and Safety in Long-Term Care book cover" class="book-cover-img">
+              <div class="book-cover-overlay"><i class="fas fa-external-link-alt"></i> View on Amazon</div>
+            </div>
+          </a>
+          <div class="book-showcase-details">
+            <span class="book-year-tag">2025</span>
+            <h3>Managing Quality and Safety in Long-Term Care</h3>
+            <p class="book-publisher"><i class="fas fa-building"></i> Springer Publishing Company</p>
+            <p class="book-isbn"><i class="fas fa-barcode"></i> ISBN: 978-0-8261-4934-3</p>
+            <p class="book-intro">
+              A premier textbook for future long-term care leaders, this volume integrates evidence-based strategies, real-world case studies, and key performance indicators to drive quality improvement, workforce sustainability, and patient safety across senior living settings. Co-edited with Nicholas G. Castle, it serves as a foundational resource for health administration students and practitioners.
+            </p>
+            <a href="https://www.amazon.com/dp/0826149340/" target="_blank" class="book-buy-btn">
+              <i class="fab fa-amazon"></i> Available on Amazon
+            </a>
+          </div>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book-showcase-card book-showcase-alt">
+          <div class="book-showcase-details">
+            <span class="book-year-tag">2021</span>
+            <h3>Isms in Health Care Human Resources</h3>
+            <p class="book-publisher"><i class="fas fa-building"></i> Jones &amp; Bartlett Learning</p>
+            <p class="book-isbn"><i class="fas fa-barcode"></i> ISBN: 978-1-284-20180-2</p>
+            <p class="book-intro">
+              This concise, practitioner-focused guide introduces the concepts of "output maximization" and "central tendencyism" as frameworks for recognizing unconscious workplace bias. Designed for health care HR professionals and students, it provides actionable tools for redesigning teams, improving organizational culture, and building genuinely inclusive workplaces in clinical and administrative settings.
+            </p>
+            <a href="https://www.amazon.com/dp/1284201805/" target="_blank" class="book-buy-btn">
+              <i class="fab fa-amazon"></i> Available on Amazon
+            </a>
+          </div>
+          <a href="https://www.amazon.com/dp/1284201805/" target="_blank" class="book-cover-link">
+            <div class="book-cover-wrapper">
+              <img src="./Darren Liu, DrPH _ Portfolio_files/CoIs7ZEb" alt="Isms in Health Care Human Resources book cover" class="book-cover-img">
+              <div class="book-cover-overlay"><i class="fas fa-external-link-alt"></i> View on Amazon</div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book-showcase-card">
+          <a href="https://www.amazon.com/Challenges-Health-Disparities-Implications-Professionals/dp/1284156095" target="_blank" class="book-cover-link">
+            <div class="book-cover-wrapper">
+              <img src="./Darren Liu, DrPH _ Portfolio_files/wlpGAyXX" alt="The Challenges of Health Disparities book cover" class="book-cover-img">
+              <div class="book-cover-overlay"><i class="fas fa-external-link-alt"></i> View on Amazon</div>
+            </div>
+          </a>
+          <div class="book-showcase-details">
+            <span class="book-year-tag">2019</span>
+            <h3>The Challenges of Health Disparities</h3>
+            <p class="book-publisher"><i class="fas fa-building"></i> Jones &amp; Bartlett Learning</p>
+            <p class="book-isbn"><i class="fas fa-barcode"></i> ISBN: 978-1-284-15609-6</p>
+            <p class="book-intro">
+              A groundbreaking contribution to health care administration literature, this book was among the first in its field to tackle health disparities head-on. It introduces the "disparities chain" framework — a systematic model linking social determinants, care delivery, and outcomes — to equip future leaders with both the language and the tools to drive policy innovation and equitable health systems reform.
+            </p>
+            <a href="https://www.amazon.com/Challenges-Health-Disparities-Implications-Professionals/dp/1284156095" target="_blank" class="book-buy-btn">
+              <i class="fab fa-amazon"></i> Available on Amazon
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Research Themes -->
+    <section id="research">
+      <div class="section-title">Research Themes</div>
+      <div class="themes-grid reveal active">
+        <!-- Theme 1 -->
+        <div class="theme-card">
+          <div class="theme-accent theme-teal"></div>
+          <i class="fas fa-hospital-user fa-2x" style="color: var(--teal)"></i>
+          <h3>Long-Term Care Policy &amp; Innovation</h3>
+          <p>
+            Research on nursing home quality, person-centered care, pandemic leadership in post-acute settings, and
+            Taiwan's LTC 3.0 reforms. 15+ peer-reviewed articles focusing on systemic improvements.
+          </p>
+        </div>
+        <!-- Theme 2 -->
+        <div class="theme-card">
+          <div class="theme-accent theme-gold"></div>
+          <i class="fas fa-balance-scale fa-2x" style="color: var(--gold)"></i>
+          <h3>Health Equity &amp; Disparities</h3>
+          <p>
+            Systematic reviews and studies on cancer screening disparities, DEI in healthcare education, and the
+            'disparities chain' framework now adopted in public health curriculum nationwide.
+          </p>
+        </div>
+        <!-- Theme 3 -->
+        <div class="theme-card">
+          <div class="theme-accent theme-navy"></div>
+          <i class="fas fa-laptop-medical fa-2x" style="color: var(--navy)"></i>
+          <h3>Digital Health &amp; Aging</h3>
+          <p>
+            Pioneering work on health information technology in nursing homes, online health tool use among older
+            adults, and introducing AI literacy into graduate public health education.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Honors -->
+    <section id="honors" style="background: white">
+      <div class="section-title">Honors &amp; Recognition</div>
+      <div class="honors-grid reveal active">
+        <div class="honor-card">
+          <div class="year-badge">2025</div>
+          <div>
+            <h4>Taiwan Fellowship Visiting Scholar</h4>
+            <p style="color: var(--text-light); font-size: 0.9rem">Taiwanese Ministry of Foreign Affairs</p>
+          </div>
+        </div>
+        <div class="honor-card">
+          <div class="year-badge">2024</div>
+          <div>
+            <h4>Reviewer of the Year</h4>
+            <p style="color: var(--text-light); font-size: 0.9rem">Innovation in Aging, Oxford University Press</p>
+          </div>
+        </div>
+        <div class="honor-card">
+          <div class="year-badge">2023</div>
+          <div>
+            <h4>Teaching Excellence Award</h4>
+            <p style="color: var(--text-light); font-size: 0.9rem">ACHE / AHA / NAHSE / NALHE / AUPHA Coalition</p>
+          </div>
+        </div>
+        <div class="honor-card">
+          <div class="year-badge">2021</div>
+          <div>
+            <h4>Distinguished Faculty Scholar Award</h4>
+            <p style="color: var(--text-light); font-size: 0.9rem">Des Moines University</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section id="service">
+      <div class="section-title">Leadership &amp; Service</div>
+      <div class="service-list reveal active">
+        <div class="service-column">
+          <h3>Editorial &amp; Institutional</h3>
+          <div class="service-item"><i class="fas fa-check"></i> Faculty Senator, West Virginia University</div>
+          <div class="service-item">
+            <i class="fas fa-check"></i> Managing Editor, Gerontology &amp; Geriatrics Education
+          </div>
+          <div class="service-item"><i class="fas fa-check"></i> Associate Editor, JMIR Aging</div>
+          <div class="service-item"><i class="fas fa-check"></i> Chair, Long-Term Care Faculty Forum (AUPHA)</div>
+        </div>
+        <div class="service-column">
+          <h3>National Boards &amp; Committees</h3>
+          <div class="service-item"><i class="fas fa-check"></i> Board of Directors, AUPHA (2021-2024)</div>
+          <div class="service-item"><i class="fas fa-check"></i> Co-chair, DEI Section, ASPPH</div>
+          <div class="service-item"><i class="fas fa-check"></i> Advisory Committee, ASPPH</div>
+          <div class="service-item"><i class="fas fa-check"></i> Fellow, Gerontological Society of America</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h2>Let's Connect</h2>
+      <p style="color: rgba(255, 255, 255, 0.7)">
+        Available for research collaboration, speaking engagements, and consulting.
+      </p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <div><a href="mailto:darren.liu@outlook.com">darren.liu@outlook.com</a></div>
+        </div>
+        <div class="contact-card">
+          <i class="fab fa-linkedin"></i>
+          <div><a href="https://www.linkedin.com/in/hokila/" target="_blank">LinkedIn Profile</a></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-phone"></i>
+          <div><a href="tel:+14123301212">+1 412 330 1212</a></div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Darren Liu, DrPH. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Scroll Reveal Script -->
+    <script>
+      window.addEventListener('scroll', reveal);
+
+      function reveal() {
+        var reveals = document.querySelectorAll('.reveal');
+
+        for (var i = 0; i < reveals.length; i++) {
+          var windowHeight = window.innerHeight;
+          var revealTop = reveals[i].getBoundingClientRect().top;
+          var revealPoint = 150;
+
+          if (revealTop < windowHeight - revealPoint) {
+            reveals[i].classList.add('active');
+          }
+        }
+      }
+
+      // Trigger once on load
+      reveal();
+    </script>
+  <script defer="" src="./Darren Liu, DrPH _ Portfolio_files/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;4edd5f8ec12a48cfa682ab8261b80a79&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
+
+
+<div class="glasp-ui-wrapper" id="glasp-ui-wrapper" style="height: 0px; width: 0px; padding: 0px;"><iframe name="glasp-tooltip-iframe" id="glasp-tooltip-iframe" style="display: none;" src="./Darren Liu, DrPH _ Portfolio_files/saved_resource.html"></iframe><iframe name="glasp-sidebar-iframe" id="glasp-sidebar-iframe" style="display: none !important;width: 0px !important; min-width: 0px !important; max-width: 320px; height: 100%; background: transparent; margin: auto; position: fixed; top: 0px; right: 0px; left: auto; z-index: 9000000000000000000;border: none !important;" src="./Darren Liu, DrPH _ Portfolio_files/saved_resource(1).html"></iframe></div><div id="yt_article_summary_widget_wrapper" class="yt_article_summary_widget_wrapper" style="display: none; margin: auto; width: fit-content; padding: 0px; border-radius: 100%;">
+        <div id="yt_article_summary_widget" class="yt_article_summary_widget"><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1.40123 27.3686C-0.44103 25.5284 -0.441033 22.5449 1.4012 20.7047L16.5971 5.52573L24.0098 12.9301L5.47818 31.4409L1.40123 27.3686Z" fill="#FF4E74"></path>
+        <path d="M35.1286 24.0367L16.5972 5.5258L20.6741 1.45341C22.5164 -0.386772 25.5033 -0.386775 27.3455 1.45341L42.5415 16.6323L35.1286 24.0367Z" fill="#FFF85E"></path>
+        <path d="M24.0099 35.143L42.5416 16.6323L46.6183 20.7046C48.4606 22.5448 48.4606 25.5284 46.6183 27.3686L31.4224 42.5476L24.0099 35.143Z" fill="#76FF54"></path>
+        <path d="M27.3454 46.6198C25.5032 48.4601 22.5163 48.4601 20.674 46.6198L5.47815 31.4409L12.8908 24.0366L31.4223 42.5476L27.3454 46.6198Z" fill="#5C94FF"></path>
+    </svg></div>
+        <div id="yt_article_summary_close_button" class="yt_article_summary_close_button">×</div>
+    </div><div id="glasp-extension-toast-container" style="position: fixed; top: 32px; right: 16px; z-index: 2147483647; display: none; flex-direction: column; align-items: flex-end; height: 0px; width: auto; margin: 0px; padding: 0px;"></div><div class="glasp-extension-toaster" style="display: block; width: 320px; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; top: 40px; right: 24px; z-index: 9999;"><template shadowrootmode="open"><div class="glasp-extension" style="font-family: inherit;"></div></template></div></body><div class="glasp-extension" style="display: block; width: unset; margin: unset; padding: unset; border: unset; border-radius: unset; outline: unset; background-color: unset; box-shadow: unset; position: fixed; bottom: 16px; right: 16px; z-index: 9999;"><div class="glasp-extension" style="font-family: inherit;"></div></div></html>
