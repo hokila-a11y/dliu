@@ -181,7 +181,18 @@
         color: var(--gold);
         transform: translateY(-3px);
       }
+/* Ensure all icons in hero-links are visible */
+.hero-links i {
+    font-size: 1.5rem;
+    color: var(--navy);   /* default visible color */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
 
+.hero-links a:hover i {
+    color: var(--gold);   /* hover color */
+    transform: translateY(-3px);
+}
+        
 /* Style for all icons inside hero-links */
       .hero-links i {
         font-size: 1.5rem;
@@ -749,11 +760,7 @@
         <p class="hero-subtitle">Professor of Public Health | Health Equity Advocate | Scholar &amp; Leader</p>
         <p class="hero-institution">WVU School of Public Health</p>
 
-        <div class="hero-links">
-          <a href="mailto:darren.liu@outlook.com" class="hero-icon"><i class="fas fa-envelope"></i></a>
-          <a href="https://www.linkedin.com/in/hokila/" target="_blank" class="hero-icon"><i class="fab fa-linkedin"></i></a>
-          <a href="tel:+14123301212" class="hero-icon"><i class="fas fa-phone"></i></a>
-        
+        <div class="hero-links">      
         <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/hokila/" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
