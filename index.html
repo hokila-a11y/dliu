@@ -177,12 +177,14 @@
           color 0.3s;
       }
         
-     .hero-links i.hero-icon {
-        color: var(--navy) !important;   /* ← THIS FIXES THE ISSUE */
-    } 
-     .hero-links a:hover i.hero-icon {
-        color: var(--gold) !important;
-    }
+      /* INSERT THIS FIX RIGHT HERE */
+        .hero-links a i.hero-icon {
+            color: var(--navy) !important;
+        }
+
+        .hero-links a:hover i.hero-icon {
+            color: var(--gold) !important;
+        }
       .hero-icon:hover {
         color: var(--gold);
         transform: translateY(-3px);
