@@ -632,7 +632,6 @@
         color: var(--gold);
         font-size: 0.8rem;
       }
-
      
       /* Footer */
       footer {
@@ -770,6 +769,13 @@
 .contact .section-title {
   color: var(--gold);
 }
+    .contact-section p.tagline {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+<p class="tagline">Available for research collaborations, curriculum development, and consulting.</p>
 
 /* Contact Grid (cards) */
 .contact-grid {
@@ -865,6 +871,11 @@
 
 .btn-submit:hover {
   background-color: #d49800;
+}
+.required {
+  color: #EAAA00; /* WVU Gold */
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 </style>
@@ -1234,13 +1245,13 @@
 
   <div class="form-row two-col">
     <div class="form-group">
-      <label for="first-name">First Name</label>
-      <input id="first-name" name="first-name" type="text" required>
+     <label for="first-name">First Name <span class="required">(required)</span></label>
+     <input type="text" id="first-name" name="first-name" required>
     </div>
 
     <div class="form-group">
-      <label for="last-name">Last Name</label>
-      <input id="last-name" name="last-name" type="text" required>
+      <label for="last-name">Last Name <span class="required">(required)</span></label>
+      <input type="text" id="last-name" name="last-name" required>
     </div>
   </div>
 
@@ -1250,8 +1261,8 @@
   </div>
 
   <div class="form-group">
-    <label for="email">Email</label>
-    <input id="email" name="email" type="email" required>
+    <label for="email">Email <span class="required">(required)</span></label>
+    <input type="email" id="email" name="email" required>
   </div>
 
   <div class="form-group">
@@ -1259,9 +1270,9 @@
     <select id="subject" name="subject" required>
       <option value="">Select an option</option>
       <option value="consulting">Consulting Services</option>
-      <option value="keynote">Curriculum Development</option>
-      <option value="press">Research Services</option>
-      <option value="research">Others</option>
+      <option value="curriculum">Curriculum Development</option>
+      <option value="research">Research Services</option>
+      <option value="other">Others</option>
     </select>
   </div>
 
