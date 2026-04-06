@@ -813,6 +813,53 @@
   padding: 80px 0;
   color: #ffffff;
 }
+/* Larger Submit Button */
+.btn-submit {
+  background-color: #EAAA00;
+  color: #002855;
+  padding: 16px 32px;   /* bigger */
+  font-size: 1.2rem;    /* larger text */
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;          /* full width button */
+  max-width: 300px;     /* but not too huge */
+  margin: 20px auto 0;  /* center it */
+  display: block;
+}
+
+.btn-submit:hover {
+  background-color: #d49800;
+}
+/* Full-width dark background for Contact section */
+.contact {
+  background-color: #0a0a0a;   /* same as your header */
+  color: #ffffff;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.contact .section-title {
+  color: #EAAA00; /* WVU Gold */
+}
+
+.contact label {
+  color: #ffffff;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  color: #ffffff;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder {
+  color: #bbbbbb;
+}
 
     </style>
   </head>
@@ -1178,7 +1225,8 @@
       Available for research collaborations, curriculum development, and consulting.
     </p>
 
-    <form action="https://formspree.io/f/xlgoavea" method="POST" class="contact-form">
+   <form action="https://formspree.io/f/xlgoavea" method="POST" class="contact-form" target="_self">
+    <input type="hidden" name="_redirect" value="https://hokila-a11y.github.io/dliu#contact">
 
   <div class="form-row two-col">
     <div class="form-group">
